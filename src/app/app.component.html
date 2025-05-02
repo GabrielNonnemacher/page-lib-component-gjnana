@@ -1,8 +1,112 @@
-<comp-gjnana-button [variant]="'primary'"
-                    [size]="'xlg'">
-  Clique Aqui
-</comp-gjnana-button>
+<div class="container">
+  <div class="box_variants">
+    <button-gjnana [variant]="'primary'"
+                   [size]="'sm'">
+      Clique Aqui
+    </button-gjnana>
 
-<comp-gjnana-button [variant]="'secondary'">
-  Clique Aqui
-</comp-gjnana-button>
+    <button-gjnana [variant]="'secondary'"
+                   [size]="'md'">
+      Clique Aqui
+    </button-gjnana>
+
+    <button-gjnana [variant]="'info'">
+      Clique Aqui
+    </button-gjnana>
+
+    <button-gjnana [variant]="'warning'">
+      Clique Aqui
+    </button-gjnana>
+
+    <button-gjnana [variant]="'danger'">
+      Clique Aqui
+    </button-gjnana>
+
+    <button-gjnana [variant]="'tertiary'"
+                   [size]="'lg'">
+      Clique Aqui
+    </button-gjnana>
+
+    <button-gjnana [variant]="'quaternary'"
+                   [size]="'xlg'">
+      Clique Aqui
+    </button-gjnana>
+
+    <button-gjnana [variant]="'success'"
+                   [size]="'xxlg'">
+      Clique Aqui
+    </button-gjnana>
+  </div>
+
+  <div class="box_variants">
+    <checkbox-gjnana [variant]="'primary'">
+    </checkbox-gjnana>
+
+    <checkbox-gjnana [variant]="'secondary'">
+    </checkbox-gjnana>
+
+    <checkbox-gjnana [variant]="'tertiary'">
+    </checkbox-gjnana>
+
+    <checkbox-gjnana [variant]="'quaternary'">
+    </checkbox-gjnana>
+
+    <checkbox-gjnana [variant]="'basic'">
+    </checkbox-gjnana>
+
+    <checkbox-gjnana [title]="'Titulo do CheckBox'"
+                     [size]="'md'">
+    </checkbox-gjnana>
+
+    <checkbox-gjnana [title]="'Titulo do CheckBox'"
+                     [size]="'lg'">
+    </checkbox-gjnana>
+  </div>
+
+  <header-gjnana [title]="'Header Example'">
+  </header-gjnana>
+
+  <header-gjnana [title]="'Header Example'"
+                 [variant]="'secondary'">
+  </header-gjnana>
+
+  <header-gjnana [title]="'Header Example'"
+                 [variant]="'tertiary'">
+  </header-gjnana>
+
+  <header-gjnana [title]="'Header Example'"
+                 [variant]="'quaternary'">
+  </header-gjnana>
+
+  <header-gjnana [title]="'Header Example'"
+                 [variant]="'basic'">
+  </header-gjnana>
+
+  <br />
+
+  <div class="accordion_gjnana">
+    <header-gjnana [title]="'Header Example'"
+                   [variant]="'basic'"
+                   (click)="onclick()">
+    </header-gjnana>
+
+    <div class="content basic"
+         #panel
+         [style.minHeight.px]="open ? panelHeight : 0"
+         [ngClass]="{ 'open': open }">
+      <ng-container class="container">
+        <button-gjnana [variant]="'primary'"
+                       [size]="'sm'">
+          Clique Aqui
+        </button-gjnana>
+
+        <button-gjnana [variant]="'secondary'"
+                       [size]="'md'">
+          Clique Aqui
+        </button-gjnana>
+      </ng-container>
+      <br />
+    </div>
+  </div>
+  <br />
+</div>
